@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem "bootstrap-sass", "~> 3.1.0.1"
 gem "haml"
+gem "devise"
 
 # user SQ Lite on Dev
 group :development, :test do
