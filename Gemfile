@@ -14,6 +14,8 @@ gem "haml"
 gem "devise"
 gem 'paperclip', '~> 3.0'
 gem 'aws-sdk', '~> 1.20.0'
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.0'
 
 # user SQ Lite on Dev
 group :development, :test do
