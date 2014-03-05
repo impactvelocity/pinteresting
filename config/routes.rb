@@ -3,7 +3,8 @@ Pinteresting::Application.routes.draw do
   resources :pins
 
   devise_for :users
-  root "pages#home"
+  
+  root "pins#index"
 
   # About URL
   get "about" => "pages#about"
