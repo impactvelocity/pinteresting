@@ -23,5 +23,8 @@ module Pinteresting
     # required for heroku - devise
     config.assets.initialize_on_precompile = false
 
+    # Enforce whitelist mode for mass assignment.
+    config.active_record.whitelist_attributes = true
+
   end
 end
