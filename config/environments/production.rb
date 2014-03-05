@@ -81,4 +81,14 @@ Pinteresting::Application.configure do
   # APP URL
   config.action_mailer.default_url_options = { :host => 'nodo-pinterest.herokuapp.com' }
 
+  # Image Storing
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  }
+
 end

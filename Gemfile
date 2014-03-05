@@ -13,6 +13,7 @@ gem "bootstrap-sass", "~> 3.1.0.1"
 gem "haml"
 gem "devise"
 gem 'paperclip', '~> 3.0'
+gem 'aws-sdk', '~> 1.20.0'
 
 # user SQ Lite on Dev
 group :development, :test do
